@@ -1,0 +1,15 @@
+nav {
+    position:sticky;
+    top: 0;
+    right: 0;
+    width:100%;
+    border: 1px solid black;
+}
+
+nav .logo{
+    display: inline-block;
+}
+
+.nav_items a {
+    display: inline-block;
+}
