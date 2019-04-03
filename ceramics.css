@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: #222;
+    background: white;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
@@ -80,7 +80,13 @@ nav a:hover::before {
     width: 100%;
 }
 
-
+.slideshow{
+    max-width: 1000px;
+    margin: auto;
+}
+.slide{
+    display:none;
+}
 
 
 footer {
