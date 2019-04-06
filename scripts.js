@@ -17,3 +17,15 @@ function displaySlides() {
     slides[slideCounter - 1].style.display = "block";
     setTimeout(displaySlides, 2000);
 }
+
+function open_menu() {
+    var nav_items = document.getElementsByTagName("nav")[0].getElementsByTagName("li");
+    for(var i=1; i<nav_items.length; i++){
+        if (nav_items[i].style.display === "block") {
+            nav_items[i].style.display = "none";
+        }
+        else{
+            nav_items[i].style.display = "block";
+        }
+    }
+}

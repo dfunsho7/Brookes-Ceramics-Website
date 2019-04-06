@@ -21,6 +21,9 @@ html, body{
 
 header{
     background: #55d6aa;
+    position: sticky;
+    top: 0%;
+    z-index: 9;
 }
 
 header::after {
@@ -75,24 +78,57 @@ nav a::before{  /*pseudo elements before the content*/
     transition: all ease-in-out 250ms; /*controls the speed of hover animation*/
 }
 
-
 nav a:hover::before {
     width: 100%;
+}
+
+nav li .nav-button{
+    display:none;
+}
+
+@media only screen and (max-width: 900px) {
+    nav li{display: none; text-align: right;}
+    nav a {line-height: 20px;}
+    nav a::before{display:none;}
+    nav a:hover{font-size:110%;}
+    nav li.nav-button{display:inline-block; float: right; z-index: 6}
 }
 
 .slideshow{
     max-width: 1000px;
     margin: auto;
+    position: relative;
 }
 .slide{
     display:none;
 }
 
+.discover-product-button a{
+    text-decoration: none;
+    color: black;
+}
+
+.discover-product-button{
+    background-color: grey;
+    padding:32px 16px;
+    display: inline-block;
+    position: absolute;
+    bottom:3%;
+    left:90%;
+    transform: translate(-50%,0);
+    border-radius: 7px;
+    border:none;
+    transtion-duration: 5s;
+    font-size: large;
+}
+
+.discover-product-button:hover{
+    transform:scale(1.1) translate(-45%,0);
+}
+
+
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: coral;
     color:white;
