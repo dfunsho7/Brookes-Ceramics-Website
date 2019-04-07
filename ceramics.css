@@ -82,7 +82,7 @@ nav a:hover::before {
     width: 100%;
 }
 
-nav li .nav-button{
+nav li.nav-button{
     display:none;
 }
 
