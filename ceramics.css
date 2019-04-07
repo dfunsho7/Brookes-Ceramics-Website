@@ -20,7 +20,7 @@ html, body{
 }
 
 header{
-    background: #55d6aa;
+    background: brown;
     position: sticky;
     top: 0%;
     z-index: 9;
@@ -130,8 +130,14 @@ nav li.nav-button{
 
 footer {
     width: 100%;
-    background-color: coral;
+    height:10%;
+    background-color: brown;
     color:white;
     text-align: left;
 }
 
+.ig-logo{
+    position: absolute;
+
+
+}

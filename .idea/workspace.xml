@@ -32,8 +32,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ceramics.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="142">
-                  <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
+                <state relative-caret-position="184">
+                  <caret line="62" column="115" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
                 </state>
               </provider>
             </entry>
@@ -45,8 +45,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ceramics.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+                <state relative-caret-position="158">
+                  <caret line="140" selection-start-line="140" selection-end-line="140" />
                 </state>
               </provider>
             </entry>
@@ -182,12 +182,12 @@
       <workItem from="1553006931096" duration="25000" />
       <workItem from="1553249626164" duration="2591000" />
       <workItem from="1554129078807" duration="21563000" />
-      <workItem from="1554572958892" duration="13555000" />
+      <workItem from="1554572958892" duration="15715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38704000" />
+    <option name="totallyTimeSpent" value="40864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="738" height="800" extended-state="0" />
@@ -277,15 +277,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ceramics.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        <state relative-caret-position="158">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ceramics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
+        <state relative-caret-position="184">
+          <caret line="62" column="115" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
         </state>
       </provider>
     </entry>
