@@ -1,80 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Affordable and authentic Moroccan Ceramics">
-    <meta name="keywords" content="Moroccan Ceramics">
-    <meta name="author" content="Daniel Ogunseye">
-    <title>Moroccan Ceramics | Welcome </title>
-    <link rel="stylesheet" href="ceramics.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Affordable and authentic Moroccan Ceramics">
+        <meta name="keywords" content="Moroccan Ceramics">
+        <meta name="author" content="Daniel Ogunseye">
+        <title>Moroccan Ceramics | Welcome </title>
+        <link rel="stylesheet" href="ceramics.css">
 
-</head>
-<body onload="initSlides()">
+    </head>
+    <body onload="initSlides()">
 
-    <header>
-        <div class="container">
+        <header>
+            <div class="container">
 
-            <img src="images/Logo/firebowl.jpg" alt="Moroccan Ceramics"  class="logo" width="50px"/>
+                <img src="images/Logo/logo_fired_bowl.png" alt="Moroccan Ceramics"  class="logo" width="50px"/>
 
-        <nav>
-            <ul>
-                <li class="nav-button"><a onclick="open_menu()"><img src="images/Logo/menu.jpg" height="20px"></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="About.html">About us</a></li>
-                <li><a href="Contact.html">Contact us</a></li>
-            </ul>
-        </nav>
+                <nav>
+                    <ul>
+                        <li class="nav-button"><a onclick="open_menu()"><img src="images/Logo/menu.jpg" height="20px"></a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
 
+            </div>
+        </header>
+
+        <div class="slideshow">
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/Ceramics/Jugs.JPG" alt="Jugs" width="100%">
+                </div>
+                <div class="slide">
+                    <img src="images/Ceramics/Flower dish.JPG" alt="Flower dish" width="100%">
+                </div>
+                <div class="slide">
+                    <img src="images/Ceramics/Flower platter.JPG" alt="Flower platter" width="100%">
+                </div>
+                <div class="slide">
+                    <img src="images/Ceramics/modern red.JPG" alt="Modern red" width="100%">
+                </div>
+                <div class="slide">
+                    <img src="images/Ceramics/Tagine.JPG" alt="Tagine" width="100%">
+                </div>
+
+            </div>
+
+            <button class = "discover-product-button">
+                <a href ="Products.html">Discover Products</a>
+
+            </button>
         </div>
-    </header>
 
-    <div class="slideshow">
-
-        <div class="slides">
-            <div class="slide">
-                <img src="images/Ceramics/Jugs.JPG" alt="Jugs" width="100%">
+        <footer>
+            <div class="column">
+                <p>Moroccan Ceramics, Copyright &copy; 2019 </p>
             </div>
-            <div class="slide">
-                <img src="images/Ceramics/Flower dish.JPG" alt="Flower dish" width="100%">
+            <div class="column">
+                <div class="social-logo">
+                    <a href ="http://www.instagram.com"><img src="images/Logo/ig-logo.jpg" alt="Instagram" height="30px"></a>
+                    <a href ="http://www.facebook.com"><img src="images/Logo/Facebook_icon.jpg" alt="Facebook" height="30px"></a>
+                </div>
+                <div class="newsletter">
+                    <p>Subscribe To Our Newsletter</p>
+                    <form>
+                        <input type="email" placeholder="Enter Email..."/>
+                    </form>
+                    <button class = "subscribe-button">Subscribe Now!</button>
+                </div>
             </div>
-            <div class="slide">
-                <img src="images/Ceramics/Flower platter.JPG" alt="Flower platter" width="100%">
+            <div class="column">
+                something
             </div>
-            <div class="slide">
-                <img src="images/Ceramics/modern red.JPG" alt="Modern red" width="100%">
-            </div>
-            <div class="slide">
-                <img src="images/Ceramics/Tagine.JPG" alt="Tagine" width="100%">
-            </div>
+        </footer>
 
-        </div>
 
-        <button class = "discover-product-button">
-            <a href ="Products.html">Discover Products</a>
 
-        </button>
-    </div>
+        <!-- Scripts-->
+        <script src="scripts.js">
+        </script>
 
-    <footer>
-        <p>Moroccan Ceramics, Copyright &copy; 2019 </p>
-        <div class="social-logo">
-            <a href ="http://www.instagram.com"><img src="images/Logo/ig-logo.jpg" alt="Instagram" width="7%" height="30px"></a>
-            <a href ="http://www.facebook.com"><img src="images/Logo/Facebook_icon.jpg" alt="Facebook" width="7%" height="30px"></a>
-        </div>
-        <div class="newsletter">
-            <p>Subscribe To Our Newsletter</p>
-            <form>
-                <input type="email" placeholder="Enter Email..."/>
-            </form>
-
-        </div>
-    </footer>
-
-    <!-- Scripts-->
-    <script src="scripts.js">
-    </script>
-
-</body>
+    </body>
 </html>
