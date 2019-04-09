@@ -153,18 +153,37 @@ footer .column{
     margin: auto;
     text-align: center;
     padding: 3px;
-}
+} 
 
 
 .subscribe-button{
-    background-color: yellowgreen;
-    padding:0px 1px;
     display: inline-block;
-    transform: translate(-50%,0);
-    border-radius: 7px;
+    padding:0px 1px;
     border:none;
-    transtion-duration: 5s;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: gold;
+    transform: translate(-50%,0);
     font-size: small;
+    position: relative;
+    left:170px;
+    top:-20px
 }
 
 
+.subscribe-button:hover{
+    color: #000000;
+    background-color: greenyellow;
+}
+
+@media all and (max-width:300em){
+    a.button1{
+        display: block;
+        margin: auto;
+    }
+}
+
+.column{
+    
+}
