@@ -36,9 +36,14 @@ header::after {
     float: left;
     padding: 10px;
 }
-
+h1{
+    padding: 15px;
+    display: inline-block;
+    margin: 0;
+}
 nav {
     float: right;
+    padding: 10px;
 }
 
 nav ul {
@@ -128,17 +133,22 @@ nav li.nav-button{
 
 
 footer {
-    display: table;
+    display: flex;
     width: 100%;
     background-color: brown;
     color:white;
     text-align: left;
+    padding: 20px 7px;
 }
 footer .column{
+    flex: 1;
     width: 33%;
     float: left;
 }
+footer .copyright{
+    margin-top:auto;
 
+}
 .social-logo{
     position:relative;
     margin:auto;
@@ -183,7 +193,9 @@ footer .column{
         margin: auto;
     }
 }
-
-.column{
+.column.payment{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
     
 }
