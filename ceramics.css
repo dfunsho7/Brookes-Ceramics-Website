@@ -201,12 +201,11 @@ footer .copyright{
 }
 
 .wrapper{
+    margin-top: 16px;
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     grid-column-gap: 1em;
-    grid-auto-rows: 250px;
-  
-    
+    grid-auto-rows: minmax(100px, auto);
     grid-gap:1em;
    
 }
@@ -217,4 +216,27 @@ footer .copyright{
 
 .wrapper > div:nth-child(odd){
     background:#ddd;
+}
+.responsive{
+    width: 100%;
+    height:auto;
+}
+
+.Blue-bowl{
+    align-content: center;
+
+}
+
+.product-button{
+    border: none;
+    color: brown;
+    padding: 14px 14px;
+    font-size:12px;
+    cursor: pointer;
+    background-color: #cc6600
+}
+
+.product-button:hover {
+    background: #e68a00;
+    
 }
