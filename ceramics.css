@@ -199,3 +199,22 @@ footer .copyright{
     margin: auto;
     
 }
+
+.wrapper{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-auto-rows: 250px;
+  
+    
+    grid-gap:1em;
+   
+}
+.wrapper > div{
+    background:#eee;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd){
+    background:#ddd;
+}
