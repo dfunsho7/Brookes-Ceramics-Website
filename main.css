@@ -20,7 +20,7 @@ html, body{
 }
 
 header{
-    background: brown;
+    background: saddlebrown;
     position: sticky;
     top: 0%;
     z-index: 9;
@@ -135,7 +135,7 @@ nav li.nav-button{
 footer {
     display: flex;
     width: 100%;
-    background-color: brown;
+    background-color: saddlebrown;
     color:white;
     text-align: left;
     padding: 20px 7px;
@@ -201,7 +201,7 @@ footer .copyright{
 }
 
 .wrapper{
-    margin-top: 16px;
+    margin-top: 10px;
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     grid-column-gap: 1em;
@@ -248,7 +248,7 @@ footer .copyright{
 }
 
 .about-section{
-    margin-top: 16px;
+    margin-top: 19px;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     grid-column-gap: 1em;
@@ -313,7 +313,7 @@ footer .copyright{
 
 .send-btn{
     display:block;
-    background: brown;
+    background: saddlebrown;
     padding:14px 0;
     text-transform: uppercase;
     cursor:pointer;
