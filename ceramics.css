@@ -223,7 +223,7 @@ footer .copyright{
 }
 
 .Blue-bowl{
-    align-content: center;
+    text-align: center;
 
 }
 
@@ -239,4 +239,24 @@ footer .copyright{
 .product-button:hover {
     background: #e68a00;
     
+}
+
+.about-section{
+    margin-top: 16px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap:1em;
+   
+}
+
+
+.about-section{
+    background:#eee;
+    padding:1em;
+}
+
+.about-section > div:nth-child(odd){
+    background:#ddd;
 }
