@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-    <link rel="stylesheet" href="ceramics.css">
-</head>
-<body>
-<header>
+    <head>
+        <meta charset="UTF-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
             <img src="images/Logo/logo_fired_bowl.png" alt="Moroccan Ceramics"  class="logo" width="50px"/>
             <h1>Fire Bowl</h1>
 
             <nav>
                 <ul>
                     <li class="nav-button"><a onclick="open_menu()"><img src="images/Logo/menu.jpg" height="20px"></a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="About.html">About us</a></li>
                     <li><a href="Contact.html">Contact us</a></li>
                 </ul>
             </nav>
-    </header>
-    <div class="about-section">
-        <div>
-            <img src="images/Ceramics/pottery-maker.jpg" alt="Pottery Maker"  class="logo" width="50px"/>
+        </header>
+        <div class="about-section">
+            <div>
+                <img src="images/Ceramics/pottery-maker.jpg" alt="Pottery Maker"  class="responsive" width="250px"/>
+            </div>
+            <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <iframe width="100%" src="https://www.youtube.com/embed/rfNfEag5q2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </div>
-        <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-        
-        
-    </div>
-    
-    
-    <div class="about-section"></div>
-    <!-- Scripts-->
+
+        <footer>
+            <div class="column copyright">
+                <p>Moroccan Ceramics, Copyright &copy; 2019 </p>
+            </div>
+            <div class="column">
+                <div class="social-logo">
+                    <a href ="http://www.instagram.com"><img src="images/Logo/ig.jpg" alt="Instagram" height="30px"></a>
+                    <a href ="http://www.facebook.com"><img src="images/Logo/fb.jpg" alt="Facebook" height="30px"></a>
+                    <a href ="http://www.outlook.com"><img src="images/Logo/mail.jpg" alt="Mail" height="30px"></a>
+                </div>
+                <div class="newsletter">
+                    <p>Be Our Friend! </p>
+                    <form>
+                        <input type="email" placeholder="Enter Email..."/>
+                    </form>
+                    <button class = "subscribe-button">Subscribe Now!</button>
+                </div>
+            </div>
+            <div class="column payment">
+                <a href ="http://www.visa.com"><img src="images/Logo/visa.jpg" alt="Visa" height="70px" align="middle"></a>
+                <a href ="http://www.paypal.com"><img src="images/Logo/paypal.jpg" alt="Paypal" height="30px" align="middle"></a>
+            </div>
+        </footer>
+
+
+        <!-- Scripts-->
         <script src="scripts.js">
         </script>
 
 
-</body>
+    </body>
 </html>

@@ -209,6 +209,12 @@ footer .copyright{
     grid-gap:1em;
    
 }
+@media only screen and  (max-width:700px){
+    .wrapper{grid-template-columns:repeat(2, 1fr)};
+}
+@media only screen and  (max-width:500px){
+    .wrapper{grid-template-columns:repeat(1, 1fr)};
+}
 .wrapper > div{
     background:#eee;
     padding: 1em;
@@ -259,4 +265,63 @@ footer .copyright{
 
 .about-section > div:nth-child(odd){
     background:#ddd;
+}
+
+.contact-form{
+    width:85%;
+    max-width: 600px;
+    background#f1f1f1;
+    transform: translate(-50%, -50%;);
+    padding:30px 40px;
+    margin:20px auto 20px auto;
+    box-sizing: border-box;
+    border-radius:8px;
+    text-align:center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-form h1{
+    margin-top: 0;
+    font-weight:200;
+}
+
+.textbox{
+    border:1px solid gray;
+    margin:8px 0;
+    padding: 12px 18px;
+    border-radius:8px;
+    
+}
+
+.textbox lebal{
+    display:block;
+    text-align:left;
+    color:#333;
+    text-transform: uppercase;
+    font-size:14px;
+}
+
+.textbox input, .textbox textarea{
+    width 100;
+    border:none;
+    background: none
+    outline:none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.send-btn{
+    display:block;
+    background: brown;
+    padding:14px 0;
+    text-transform: uppercase;
+    cursor:pointer;
+    margin-top: 8px;
+    width: 100%;
+    
+}
+
+.send-btn:hover{
+    background: green;
 }
