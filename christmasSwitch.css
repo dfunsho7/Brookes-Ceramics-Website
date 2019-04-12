@@ -3,7 +3,9 @@ body{
     margin: 0;
     background: white;
     font-family: 'Work Sans', sans-serif;
+    background-image: url(images/Ceramics/christmas.jpg);
     font-weight: 400;
+    color: black;
 }
 
 html, body{
@@ -208,6 +210,7 @@ footer .copyright{
     grid-column-gap: 1em;
     grid-auto-rows: minmax(100px, auto);
     grid-gap:1em;
+    background-color: none;
    
 }
 @media only screen and  (max-width:700px){
@@ -368,6 +371,7 @@ footer .copyright{
     background-color: #cc6600
 }
 
+
 .xmasbtn{
     display: inline-block;
     padding:1px 1px;
@@ -376,7 +380,7 @@ footer .copyright{
     text-decoration: none;
     text-align: center;
     background-color: grey;
-    transform: translate(-140%,0);
+    transform: translate(-130%,0);
     font-size: small;
     position: relative;
     left:170px;
@@ -395,13 +399,4 @@ a:hover{
 .xmasbtn a{
     text-decoration: none;
     color: black;
-}
-
-body{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3e2c7+0,e9d4b3+100 */
-background: rgb(243,226,199); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(233,212,179,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(243,226,199,1) 0%,rgba(233,212,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(243,226,199,1) 0%,rgba(233,212,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */ 
 }
