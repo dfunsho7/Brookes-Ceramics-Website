@@ -186,7 +186,11 @@ nav li.nav-button{
     display:none;
 }
 
+<<<<<<< HEAD
 /*Discover product button & animation on slide show*/
+=======
+/*Discover product button on slide show*/
+>>>>>>> master
 .discover-product-button a{
     text-decoration: none;
     color: darkgreen;
@@ -209,7 +213,11 @@ nav li.nav-button{
     transform:scale(1.1) translate(-45%,0);
 }
 
+<<<<<<< HEAD
 /*Footer with columns, social icons & subscribe button*/
+=======
+/*Footer with columns and buttons*/
+>>>>>>> master
 footer {
     display: flex;
     width: 100%;
@@ -390,10 +398,13 @@ p{
 
 .about-section > div{
     background:transparent;
+<<<<<<< HEAD
 }
 
 .box .text{
     background-color: whitesmoke;   
+=======
+>>>>>>> master
 }
 
 .box .info{
@@ -489,3 +500,10 @@ a:hover{
     color: black;
 }
 
+<<<<<<< HEAD
+=======
+
+.text{
+    background-color: beige;
+}
+>>>>>>> master

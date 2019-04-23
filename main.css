@@ -260,7 +260,12 @@ p{
     padding: 14px 14px;
     font-size:12px;
     cursor: pointer;
+<<<<<<< HEAD
     background-color: #cc6600    
+=======
+    background-color: #cc6600
+    
+>>>>>>> master
 }
 
 .product-button:hover {
