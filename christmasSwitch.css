@@ -5,7 +5,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     background-image: url(images/Ceramics/christmas.jpg);
     font-weight: 400;
-    color: black;
+    color: Green;
 }
 
 html, body{
@@ -15,7 +15,81 @@ html, body{
     margin:0px;
 }
 
+/*Snow fall animation*/
+.snow-container {
+    position: fixed;
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+}
 
+.snow {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    -webkit-animation: snow linear infinite;
+    animation: snow linear infinite;
+}
+.snow.foreground {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+.snow.foreground.layered {
+    -webkit-animation-delay: 7.5s;
+    animation-delay: 7.5s;
+}
+.snow.middleground {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+.snow.middleground.layered {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.snow.background {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+.snow.background.layered {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
+
+@keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
 
 .container{
     width: 80%;
@@ -23,7 +97,7 @@ html, body{
 }
 
 header{
-    background: saddlebrown;
+    background: brown;
     position: sticky;
     top: 0%;
     z-index: 9;
@@ -71,7 +145,7 @@ nav a {
 }
 
 nav a:hover {    /* pseudo class hover animation*/
-    color:yellowgreen;
+    color:green;
 }
 
 nav a::before{  /*pseudo elements before the content*/
@@ -102,6 +176,7 @@ nav li.nav-button{
     nav li.nav-button{display:inline-block; float: right; z-index: 6}
 }
 
+/*Slide Show with a variety of pictures*/
 .slideshow{
     max-width: 1000px;
     margin: auto;
@@ -111,9 +186,10 @@ nav li.nav-button{
     display:none;
 }
 
+/*Discover product button & animation on slide show*/
 .discover-product-button a{
     text-decoration: none;
-    color: black;
+    color: darkgreen;
 }
 
 .discover-product-button{
@@ -126,7 +202,6 @@ nav li.nav-button{
     transform: translate(-50%,0);
     border-radius: 7px;
     border:none;
-    transtion-duration: 5s;
     font-size: large;
 }
 
@@ -134,11 +209,11 @@ nav li.nav-button{
     transform:scale(1.1) translate(-45%,0);
 }
 
-
+/*Footer with columns, social icons & subscribe button*/
 footer {
     display: flex;
     width: 100%;
-    background-color: saddlebrown;
+    background-color: brown;
     color:white;
     text-align: left;
     padding: 20px 7px;
@@ -176,7 +251,8 @@ footer .copyright{
     border-radius: 7px;
     text-decoration: none;
     text-align: center;
-    background-color: gold;
+    color:darkcyan;
+    background-color:azure;
     transform: translate(-50%,0);
     font-size: small;
     position: relative;
@@ -186,10 +262,11 @@ footer .copyright{
 
 
 .subscribe-button:hover{
-    color: #000000;
-    background-color: greenyellow;
+    color:beige;
+    background-color:coral;
 }
 
+/*Footer responsive*/
 @media all and (max-width:300em){
     a.button1{
         display: block;
@@ -203,6 +280,7 @@ footer .copyright{
     
 }
 
+/**Product page CSS Grid to organise product images & responsive**/
 .wrapper{
     margin-top: 10px;
     display:grid;
@@ -210,9 +288,15 @@ footer .copyright{
     grid-column-gap: 1em;
     grid-auto-rows: minmax(100px, auto);
     grid-gap:1em;
-    background-color: none;
-   
+    background-color: none;   
 }
+
+p{
+    text-align: center;
+    margin: auto;
+    position: static;
+}
+
 @media only screen and  (max-width:700px){
     .wrapper{grid-template-columns:repeat(2, 1fr)};
 }
@@ -224,8 +308,8 @@ footer .copyright{
     padding: 1em;
 }
 
-.wrapper > div:nth-child(odd){
-    background:#ddd;
+.wrapper > div{
+    background:transparent;
 }
 .responsive{
     width: 100%;
@@ -240,6 +324,9 @@ footer .copyright{
 .product-button{
     border: none;
     color: brown;
+    display:block;
+    max-width: 80px;
+    margin: auto;
     padding: 14px 14px;
     font-size:12px;
     cursor: pointer;
@@ -251,30 +338,73 @@ footer .copyright{
     
 }
 
+/****Detailed info page for Blue Bowl product****/
+
+.blueb{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+    padding-top: 100px;
+    
+}
+
+.cart-button{
+    border: none;
+    color: whitesmoke;
+    display: block;
+    max-width: 150px;
+    margin: auto;
+    padding: 14px 14px;
+    font-size:12px;
+    cursor: pointer;
+    background-color: brown;
+}
+
+
+/****Detailed info page for Flower Platter****/
+.flowerp{
+    display:block;
+    color:green;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+    padding-top: 100px;   
+}
+
+/****About us page format & layout****/
 .about-section{
     margin-top: 19px;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     grid-column-gap: 1em;
     grid-auto-rows: minmax(100px, auto);
-    grid-gap:1em;
-   
+    grid-gap:1em;  
 }
 
 
 .about-section{
-    background:#eee;
+    background:transparent;
     padding:1em;
 }
 
-.about-section > div:nth-child(odd){
-    background:#ddd;
+.about-section > div{
+    background:transparent;
 }
 
+.box .text{
+    background-color: whitesmoke;   
+}
+
+.box .info{
+    background-color: whitesmoke;  
+}
+
+/***********Contact us form*****************/
 .contact-form{
     width:85%;
     max-width: 600px;
-    background#f2f2f2;
+    background:#f2f2f2;
     transform: translate(-50%, -50%;);
     padding:30px 40px;
     margin:20px auto 20px auto;
@@ -298,7 +428,7 @@ footer .copyright{
     
 }
 
-.textbox lebal{
+.textbox label{
     display:block;
     text-align:left;
     color:#333;
@@ -317,7 +447,7 @@ footer .copyright{
 
 .send-btn{
     display:block;
-    background: saddlebrown;
+    background: white;
     padding:14px 0;
     text-transform: uppercase;
     cursor:pointer;
@@ -327,51 +457,10 @@ footer .copyright{
 }
 
 .send-btn:hover{
-    background: green;
+    background: brown;
 }
 
-.blueb{
-    display:block;
-    margin-left:auto;
-    margin-right: auto;
-    width:50%;
-    padding-top: 100px;
-    
-}
-
-.cart-button{
-    border: none;
-    color: whitesmoke;
-    padding: 14px 14px;
-    font-size:12px;
-    cursor: pointer;
-    background-color: #cc6600
-}
-
-.cart:hover {
-    background: #e68a00;
-    
-}
-
-
-.flowerp{
-    display:block;
-    margin-left:auto;
-    margin-right: auto;
-    width:50%;
-    padding-top: 100px;   
-}
-
-.cart-button{
-    border: none;
-    color: whitesmoke;
-    padding: 14px 14px;
-    font-size:12px;
-    cursor: pointer;
-    background-color: #cc6600
-}
-
-
+/*Button to switch to christmas theme & back to normal theme*/
 .xmasbtn{
     display: inline-block;
     padding:1px 1px;
@@ -387,7 +476,6 @@ footer .copyright{
     top:-30px
 }
 
-
 .xmasbtn:hover{
     background: saddlebrown;
 }
@@ -400,3 +488,4 @@ a:hover{
     text-decoration: none;
     color: black;
 }
+
